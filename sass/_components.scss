@@ -194,3 +194,51 @@
     text-align: center;
     padding: 2.5rem;
 }
+
+////////////////////////////////////////////////////
+// GALLERY
+.gallery {
+    display: flex;
+
+    &__photo {
+        width: 100%;
+        display: block;
+    }
+}
+
+////////////////////////////////////////////////////
+// HOTEL OVERVIEW
+.overview {
+    display: flex;
+
+    &__heading {
+    }
+
+    &__stars {
+        // flex: 1;
+        // here, we want the elements to only have space in the middle
+        // so we set margin-right auto for the stars
+        // this means, flexbox will separate them and then, the margin will be applied, occupying all the excessive space
+        //  a good trick to use with flexbox
+        margin-right: auto;
+    }
+
+    &__icon-star,
+    &__icon-location {
+        width: 1.75rem;
+        height: 1.75rem;
+        fill: var(--color-primary);
+    }
+
+    &__location {
+    }
+
+    &__rating {
+    }
+
+    &__rating-average {
+    }
+
+    &__rating-count {
+    }
+}
